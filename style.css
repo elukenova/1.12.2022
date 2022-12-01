@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  background-image: url(./7.jpg);
+  min-width: 987px;
+  background-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-size: 200px;
+  color: #f8f9f5f8;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-shadow: 5px 5px rgba(224, 224, 7, 0.779);
+}
+
+.container { /* задать ширину и выровнять по середине */
+  max-width: 980px;
+  margin: 0 auto;
+}
+.row { /* строка */
+  display: flex;
+  flex-wrap: wrap;
+}
+[class^="col"] {
+  padding: 0 10px;
+}
+.col-1 {
+  flex: 8.3% 0 0;
+}
+.col-2 {
+  flex: 16.6% 0 0;
+}
+.col-3 {
+  flex: 25% 0 0;
+}
+.col-4 {
+  flex: 33.3% 0 0;
+}
+.col-5 {
+  flex: 41.6% 0 0;
+}
+.col-6 {
+  flex: 50% 0 0;
+}
+.col-7 {
+  flex: 58.3% 0 0;
+}
+.col-8 {
+  flex: 66.6% 0 0;
+}
+.col-9 {
+  flex: 75% 0 0;
+}
+.col-10 {
+  flex: 83% 0 0;
+}
+.col-11 {
+  flex: 91.6% 0 0;
+}
+.col-12 {
+  flex: 100% 0 0;
+}
+
+.card {
+  background-color: rgba(41, 6, 90, 0.86);
+  border: 1px solid rgba(219, 212, 23, 0.821);
+  box-shadow: 5px 5px 0 0 rgba(89, 44, 36, 0.753);
+  transform: rotate(1deg);
+  transition: all 100ms ease-in;
+
+  margin-bottom: 15px;
+}
+.card:hover {
+  transform: rotate(-2deg) scale(1.05);
+}
+.card .card-image {
+  width: 100%;
+}
+.card .card-content {
+  padding: 10px 15px;
+}
+.card.card-horizonal {
+  display: flex;
+}
+.card.card-horizonal .card-image {
+  width: 30%;
+}
